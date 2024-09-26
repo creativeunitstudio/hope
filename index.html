@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+		<a href="index.html">
+            <img src="assets/img/logo.png" alt="Logo" class="logo"></a>
+            <nav>
+                <button class="menu-toggle" id="menu-toggle">
+                    <img src="assets/img/headershortcuts/hamburger-icon.png" alt="Menu Toggle" class="menu-icon">
+                </button>
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                </ul>
+            </nav>
+		<div class="cart">
+			<button id="cart-button">Cart (0)</button>
+			</div>
+        </div>
+    </header>
+
+        <!-- Image Slider -->
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide"><img src="assets/img/slides/slide1.jpg" alt="Slide 1"></div>
+                <div class="slide"><img src="assets/img/slides/slide2.jpg" alt="Slide 2"></div>
+                <div class="slide"><img src="assets/img/slides/slide3.jpg" alt="Slide 3"></div>
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+			<div class="overlay">
+            <h2>Thank You For Visting</h2>
+            <p>Owning a smart device shouldn't be costly, we have great deals on both used and brand new devices,
+			from a laptop to MacBook and from Android to Apple at an affordable prices.</p>
+            </div>
+        </div> 
+		
+		<div class="container">
+        <div class="shortcut-bar">
+            <a href="shop.html" class="shortcut-item">
+                <img src="assets/img/headershortcuts/1.png" alt="aLL">
+                <span>All</span>
+            </a>
+			
+			<a href="categories/iphone.html" class="shortcut-item">
+                <img src="assets/img/headershortcuts/2.png" alt="iPhone">
+                <span>iPhone</span>
+            </a>
+			
+            <a href="categories/android.html" class="shortcut-item">
+                <img src="assets/img/headershortcuts/3.png" alt="Android">
+                <span>Android</span>
+            </a>
+            <a href="categories/windows.html" class="shortcut-item">
+                <img src="assets/img/headershortcuts/4.png" alt="Windows">
+                <span>Windows</span>
+            </a>
+            <a href="categories/macbook.html" class="shortcut-item">
+                <img src="assets/img/headershortcuts/5.png" alt="MacBook">
+                <span>MacBook</span>
+            </a>
+            <a href="categories/accessories.html" class="shortcut-item">
+                <img src="assets/img/headershortcuts/6.png" alt="Accessories">
+                <span>Accesorries</span>
+            </a>
+            
+            <!-- Add more shortcuts as needed -->
+        </div>
+    </div>
+	
+	<div class="content">
+            <div class="text">
+                <h1>Why Us?</h1>
+                <p>Whether you need a laptop or a mobile device for personal or business purposes,
+				you will need a high performance tech device that will not leave you out in the dark,
+				we have the best performance devices that gets the job done.</p>
+            </div>
+            <div class="image">
+                <img src="assets/img/products/aboutimage.png" alt="About Us Image">
+            </div>
+        </div>
+        
+        <!-- Products Section -->
+        <section class="products">
+            <h2>Top Features Brands</h2>
+            <div class="product-container">
+			
+		<div class="product" data-price="1499.99">
+			<img src="assets/img/featureitems/product1/1.jpg" alt="Product 1">
+			<div class="product-info">
+			<h2>Apple iPhone 6 64GB</h2>
+			<h6>iPhone</h6> 
+			<h5>This is the simple view of the product to learn more about this item,
+			click on the "View Item" button</h5>
+			<p>R1499.99</p>
+			<a href="homeitems/item1.html">
+            <button class="customizer">View Item</button></a>
+			<button class="add-to-cart">Add to Cart</button>
+		 </div>
+		</div> 
+		
+		<div class="product" data-price="1499.99">
+			<img src="assets/img/featureitems/product2/1.jpg" alt="Product 2">
+			<div class="product-info">
+			<h2>Toshiba Satellite C660</h2>
+			<h6>Windows</h6> 
+			<h5>Entry-level notebooks are rarely lookers and Toshiba's C660 doesn't even
+			particularly make the pretence of being flashy in any real way.</h5>
+			<p>R1499.99</p>
+			<a href="homeitems/item2.html">
+            <button class="customizer">View Item</button></a>
+			<button class="add-to-cart">Add to Cart</button>
+		 </div>
+		</div>
+		
+		<div class="product" data-price="1999.99">
+			<img src="assets/img/featureitems/product3/1.jpg" alt="Product 2">
+			<div class="product-info">
+			<h2>Huawei Nova 8i</h2>
+			<h6>Android</h6> 
+			<h5>The Huawei Nova 8i features a stunning 6.67-inch FHD+ display with a sleek design, 
+			offering an immersive visual experience. </h5>
+			<p>R1999.99</p>
+			<a href="homeitems/item3.html">
+            <button class="customizer">View Item</button></a>
+			<button class="add-to-cart">Add to Cart</button>
+		 </div>
+		</div>
+		
+				<div class="product" data-price="3999.99">
+			<img src="assets/img/featureitems/product4/1.jpg" alt="Product 2">
+			<div class="product-info">
+			<h2>Apple MacBook Pro 13.3”</h2>
+			<h6>MacBook</h6> 
+			<h5>Apple MacBook Pro 13.3” features a stunning Retina display and is powered by Apple's M1 chip, 
+			offering exceptional performance and efficiency.</h5>
+			<p>R3999.99</p>
+			<a href="homeitems/item4.html">
+            <button class="customizer">View Item</button></a>
+			<button class="add-to-cart">Add to Cart</button>
+		 </div>
+		</div>
+		
+	    <div class="product" data-price="3499.99">
+			<img src="assets/img/featureitems/product5/1.jpg" alt="Product 2">
+			<div class="product-info">
+			<h2>Apple iPhone 11</h2>
+			<h6>iPhone</h6> 
+			<h5>The iPhone 11 features a stunning 6.1-inch Liquid Retina display and a dual-camera system, 
+			allowing for impressive low-light photography and versatile shooting options</h5>
+			<p>R3499.99</p>
+			<a href="homeitems/item5.html">
+            <button class="customizer">View Item</button></a>
+			<button class="add-to-cart">Add to Cart</button>
+		 </div>
+		</div>
+		
+		<div class="product" data-price="2499.99">
+			<img src="assets/img/featureitems/product6/1.jpg" alt="Product 2">
+			<div class="product-info">
+			<h2>Honor X6a</h2>
+			<h6>Android</h6> 
+			<h5>This is the simple view of the product to learn more about this item,
+			click on the "View Item" button</h5>
+			<p>R2499.99</p>
+			<a href="homeitems/item6.html">
+            <button class="customizer">View Item</button></a>
+			<button class="add-to-cart">Add to Cart</button>
+		 </div>
+		</div>
+		
+        </section> 
+		
+		<div class="content">
+    <div class="text">
+        <h1>Want Make Money?</h1>
+        <p>Earn money by becoming an affiliate everytime your recommended client makes 
+		a purchase you get rewarded.
+		</p>
+		<h3>Affiliate Payouts</h3>
+		<ul>
+    <li><strong>New Laptop / iPhone Purchase:</strong> R200</li>
+    <li><strong>iPhone 6 - iPhone 8:</strong> R200</li>
+	<li><strong>iPhone X - iPhone 13 Pro:</strong> R250</li>
+</ul>
+    </div>
+  
+    <div class="image">
+        <img src="assets/img/products/affiliate.jpg" alt="About Us Image">
+    </div>
+       </div>
+		
+		<!-- Popup Modal -->
+    <div id="cart-modal" class="modal">
+      <div class="modal-content"> <span class="close">×</span>
+        <h2>Your Cart</h2>
+        <ul id="cart-items">
+          <!-- Cart items will be dynamically added here -->
+        </ul>
+        <button id="clear-cart">Clear</button> <button id="checkout-button">WhatsApp
+          Checkout</button> <a href="payment.html"> <button class="eft-button">Buy
+            Now</button></a> </div>
+    </div>
+	
+    </main>
+	
+	<!-- WhatsApp Chat Widget -->
+    <div id="whatsapp-widget">
+        <a href="https://wa.me/27698986450" target="_blank" id="whatsapp-link">
+            <img src="assets/img/contacticons/whatsapp.png" alt="WhatsApp Chat">
+        </a>
+    </div>
+	<!-- Mail Widget -->
+    <div id="mail-widget">
+        <a href="mailto:www.hopedehope60@gmail.com" target="_blank" id="mail-link">
+            <img src="assets/img/contacticons/mail.png" alt="Mail">
+        </a>
+    </div>
+	<!-- Contact Widget -->
+    <div id="contact-widget">
+        <a href="tel:+27717820074" target="_blank" id="contact-link">
+            <img src="assets/img/contacticons/contact.png" alt="Contact">
+        </a>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+		<a href="index.html">
+            <img src="assets/img/logo.png" alt="Logo" class="logo"></a>
+            <nav>
+            <p>&copy; 2024 Hope@. All rights reserved.</p> 
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

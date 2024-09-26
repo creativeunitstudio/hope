@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+		<a href="index.html">
+            <img src="assets/img/logo.png" alt="Logo" class="logo"></a>
+            <nav>
+                <button class="menu-toggle" id="menu-toggle">
+                    <img src="assets/img/headershortcuts/hamburger-icon.png" alt="Menu Toggle" class="menu-icon">
+                </button>
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                </ul>
+            </nav>
+		<div class="cart">
+			<button id="cart-button">Cart (0)</button>
+			</div>
+        </div>
+    </header>
+	<!-- Main Content -->
+    <main>
+    <div class="main-form">
+        <div class="form-container">
+            <h2>Banking Details for EFT</h2>
+                <p>Please transfer the payment to the following details, and confirm the details before making a payment, We are not to be liable for incorrect transaction details:</p>
+                <ul>
+                    <li><strong>Account Name:</strong> MR N PAKO</li>
+                    <li><strong>Account Number:</strong> 1640374610</li>
+                    <li><strong>Bank Name:</strong> Capitec Bank</li>
+                    <li><strong>Branch Code:</strong> 470010</li>
+                    <li><strong>Reference:</strong> PAKO NTHABELENG</li>
+                </ul>
+                <form>
+            <form id="eftForm" action="#" method="POST" onsubmit="sendToWhatsApp(event)">
+                <h2>EFT Payment Form</h2>
+                <label for="name">Customer's Reference:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="amount">Amount to Transfer:</label>
+                <input type="number" id="amount" name="amount" required>
+                
+                <label for="account">Bank Account Number:</label>
+                <input type="text" id="account" name="account" required>
+                
+                <label for="date">Date of Transfer:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+        <script>
+            function sendToWhatsApp(event) {
+                event.preventDefault();
+    
+                // Get form values
+                const name = document.getElementById('name').value;
+                const amount = document.getElementById('amount').value;
+                const account = document.getElementById('account').value;
+                const date = document.getElementById('date').value;
+    
+                // Create a message
+                const message = `EFT Payment Details:\nName: ${name}\nAmount: ${amount}\nAccount Number: ${account}\nDate: ${date}`;
+    
+                // WhatsApp URL format
+                const phoneNumber = '27726962588'; // Replace with your WhatsApp number
+                const encodedMessage = encodeURIComponent(message);
+                const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    
+                // Redirect to WhatsApp
+                window.location.href = url;
+            }
+            function toggleForm() {
+                const form = document.getElementById('bankingDetailsForm');
+                form.classList.toggle('show');
+            }
+        </script>
+
+    
+   
+		<!-- Popup Modal -->
+    <div id="cart-modal" class="modal">
+      <div class="modal-content"> <span class="close">×</span>
+        <h2>Your Cart</h2>
+        <ul id="cart-items">
+          <!-- Cart items will be dynamically added here -->
+        </ul>
+        <button id="clear-cart">Clear</button> <button id="checkout-button">WhatsApp
+          Checkout</button> <a href="payment.html"> <button class="eft-button">Buy
+            Now</button></a> </div>
+    </div>
+	
+    </main>
+	
+	<!-- WhatsApp Chat Widget -->
+    <div id="whatsapp-widget">
+        <a href="https://wa.me/27698986450" target="_blank" id="whatsapp-link">
+            <img src="assets/img/contacticons/whatsapp.png" alt="WhatsApp Chat">
+        </a>
+    </div>
+	<!-- Mail Widget -->
+    <div id="mail-widget">
+        <a href="mailto:www.hope97@gmail.com" target="_blank" id="mail-link">
+            <img src="assets/img/contacticons/mail.png" alt="Mail">
+        </a>
+    </div>
+	<!-- Contact Widget -->
+    <div id="contact-widget">
+        <a href="tel:+27717820074" target="_blank" id="contact-link">
+            <img src="assets/img/contacticons/contact.png" alt="Contact">
+        </a>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+		<a href="index.html">
+            <img src="assets/img/logo.png" alt="Logo" class="logo"></a>
+            <nav>
+            <p>&copy; 2024 Hope@. All rights reserved.</p> 
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

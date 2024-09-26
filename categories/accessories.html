@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+		<a href="../index.html">
+            <img src="../assets/img/logo.png" alt="Logo" class="logo"></a>
+            <nav>
+                <button class="menu-toggle" id="menu-toggle">
+                    <img src="../assets/img/headershortcuts/hamburger-icon.png" alt="Menu Toggle" class="menu-icon">
+                </button>
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../shop.html">Shop</a></li>
+                </ul>
+            </nav>
+		<div class="cart">
+			<button id="cart-button">Cart (0)</button>
+			</div>
+        </div>
+    </header>
+	<main> 
+	
+	<div class="container">
+        <div class="shortcut-bar">
+            <a href="../shop.html" class="shortcut-item">
+                <img src="../assets/img/headershortcuts/1.png" alt="All">
+                <span>All</span>
+            </a>
+			
+			<a href="iphone.html" class="shortcut-item">
+                <img src="../assets/img/headershortcuts/2.png" alt="iPhone">
+                <span>iPhone</span>
+            </a>
+			
+            <a href="android.html" class="shortcut-item">
+                <img src="../assets/img/headershortcuts/3.png" alt="Android">
+                <span>Android</span>
+            </a>
+		
+            <a href="windows.html" class="shortcut-item">
+                <img src="../assets/img/headershortcuts/4.png" alt="Windows">
+                <span>Windows</span>
+            </a>
+			
+            <a href="macbook.html" class="shortcut-item">
+                <img src="../assets/img/headershortcuts/5.png" alt="MacBook">
+                <span>MacBook</span>
+            </a>
+			
+            <a href="accessories.html" class="shortcut-item">
+                <img src="../assets/img/headershortcuts/focusedicons/6.png" alt="Accessories">
+                <span>Accesorries</span>
+            </a>
+			
+            
+            <!-- Add more shortcuts as needed -->
+        </div>
+    </div>
+
+        <!-- Products Section -->
+        <section class="products">
+            <h2>Accessories</h2>
+            <div class="product-container">
+			
+			<div class="product" data-price="499.99">
+			<img src="products/product30/main.jpg" alt="Product 1">
+			<div class="product-info">
+			<h2>MacBook Pro Retina OEM 85W MagSafe </h2>
+			<h6>MacBook</h6> 
+			<h5>The MacBook Pro Retina typically uses the 85W MagSafe power adapter, which is designed for various models of the MacBook Pro that feature Retina displays. This adapter provides efficient charging and is compatible with both 15-inch and some 13-inch Retina models.</h5>
+			<p>R499.99</p>
+			<a href="../productview/product30.html">
+            <button class="customizer">View Item</button></a>
+			<button class="add-to-cart">Add to Cart</button>
+		 </div>
+		</div> 
+		
+		<div class="product" data-price="349.99">
+			<img src="products/product31/main.jpg" alt="Product 1">
+			<div class="product-info">
+			<h2>Lenovo ThinkPad 230W</h2>
+			<h6>Windows</h6> 
+			<h5>Often features a rectangular connector (slim tip) specific to higher-end ThinkPad models.
+			Commonly used for ThinkPad models requiring higher power output,
+			like the P series or certain high-performance T and W series laptops.</h5>
+			<p>R349.99</p>
+			<a href="../productview/product31.html">
+            <button class="customizer">View Item</button></a>
+			<button class="add-to-cart">Add to Cart</button>
+		 </div>
+		</div>
+		
+		<div class="product" data-price="899.99">
+			<img src="products/product32/main.jpg" alt="Product 1">
+			<div class="product-info">
+			<h2>Lenovo 65W Round Tip AC Adaptor</h2>
+			<h6>Windows</h6> 
+			<h5>Lenovo 65W Round Tip AC Adapter is a compact power supply designed for various Lenovo laptops. 
+			It features a round connector and provides reliable charging with a power output of 65 watts.</h5>
+			<p>R899.99</p>
+			<a href="../productview/product32.html">
+            <button class="customizer">View Item</button></a>
+			<button class="add-to-cart">Add to Cart</button>
+		 </div>
+		</div>
+		
+        </section> 
+
+		<!-- Popup Modal -->
+    <div id="cart-modal" class="modal">
+      <div class="modal-content"> <span class="close">×</span>
+        <h2>Your Cart</h2>
+        <ul id="cart-items">
+          <!-- Cart items will be dynamically added here -->
+        </ul>
+        <button id="clear-cart">Clear</button> <button id="checkout-button">WhatsApp
+          Checkout</button> <a href="../payment.html"> <button class="eft-button">Buy
+            Now</button></a> </div>
+    </div>
+	
+    </main>
+	
+	<!-- WhatsApp Chat Widget -->
+    <div id="whatsapp-widget">
+        <a href="https://wa.me/27698986450" target="_blank" id="whatsapp-link">
+            <img src="../assets/img/contacticons/whatsapp.png" alt="WhatsApp Chat">
+        </a>
+    </div>
+	<!-- Mail Widget -->
+    <div id="mail-widget">
+        <a href="mailto:www.hopedehope60@gmail.com" target="_blank" id="mail-link">
+            <img src="../assets/img/contacticons/mail.png" alt="Mail">
+        </a>
+    </div>
+	<!-- Contact Widget -->
+    <div id="contact-widget">
+        <a href="tel:+27717820074" target="_blank" id="contact-link">
+            <img src="../assets/img/contacticons/contact.png" alt="Contact">
+        </a>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+		<a href="../index.html">
+            <img src="../assets/img/logo.png" alt="Logo" class="logo"></a>
+            <nav>
+            <p>&copy; 2024 Hope@. All rights reserved.</p> 
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
